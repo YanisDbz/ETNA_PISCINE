@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="bnp.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>BNP | Maquette de site</title>
+	</head>
+	<body class ="index">
+     <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+         <ul class="nav navbar-nav">
+          <li class="P0"><a href="./index_connected.html"><img class="img" src="http://www.capitaine-banque.com/wp-content/uploads/2016/08/bnp.png"></li></a>
+            <li class="P1"><a href="./informations.html">Mes informations</a></li>
+            <li class="P2"><a href="./compte.html">Mon compte</a></li>
+            <li>
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><i class="glyphicon glyphicon-bell"></i><span class="badge">42</span></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Info 1</a>
+                  <a href="#">Info 2</a>
+                  <a href="#">Info 3</a>
+                </div>
+              </div>
+            </li>
+            <li class="P4"><a href="./index_connected.html">BNP PARIBAS</a></li>
+            <li class="P5">
+                    <a href="./index.html" class="dropdown-toggle" data-toggle="dropdown">
+                        <strong>Logout</strong>
+                        <span class="glyphicon glyphicon-log-out"></span>
+                    </a>
+        </ul>
+        <form class="navbar-form navbar-left">
+           <div class="input-group" id="change">
+              <input type="text" class="form-control" placeholder="Recherche">
+                <div class="input-group-btn">
+                   <button class="btn btn-default" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+           </div>
+        </form>
+    </nav>
+    <div class="info">
+      <h2 id="compte">Mon compte</h2><br>
+      <hr width="100%">
+      <table><br>
+  <tr>
+    <td class="clr">Nom</td>
+  </tr>
+  <tr>
+    <td>Debbouza<a href="#" class="pen"><i class="glyphicon glyphicon-pencil"></i></a></td>
+ </tr>
+  <tr>
+    <td class="clr">Prenom</td>
+  </tr>
+  <tr>
+    <td>Yanis<a href="#" class="pen2"><i class="glyphicon glyphicon-pencil"></i></a></td>
+</tr>
+  <tr>
+    <td class="clr">Adresse</td>
+  </tr>
+  <tr>
+    <td>83 Boulevard Ney, Paris<a href="#" class="pen3"><i class="glyphicon glyphicon-pencil"></i></a></td>
+</tr>
+  <tr>
+    <td class="clr">Numero de téléhpone</td>
+  </tr>
+  <tr>
+    <td>07********<a href="#" class="pen4"><i class="glyphicon glyphicon-pencil"></i></a></td>
+</tr>
+  <tr>
+    <td class="clr">Adresse email</td>
+  </tr>
+  <tr>
+    <td>debbouza.yanis@outlook.fr<a href="#" class="pen5"><i class="glyphicon glyphicon-pencil"></i></a></td>
+</tr>
+  <tr>
+    <td class="clr">Droits restants</td>
+  </tr>
+  <tr>
+    <td>Aucun<a href="#" class="pen6"><i class="glyphicon glyphicon-pencil"></i></a></td>
+</tr>
+</table>
+</div>
+ <footer class="footer-distributed">
+      <div class="footer-left">
+
+        <h3>Company<span>logo</span></h3>
+
+        <p class="footer-links">
+          <a href="./index.html">Home</a>
+          ·
+          <a href="http://www.innovandconnect.bnpparibas/blog/">Blog</a>
+          ·
+          <a href="./agence.html">L'agence</a>
+          ·
+          <a href="./contact.html">Nous contacter</a>
+        </p>
+
+        <p class="footer-company-name">CE BNP &copy; 2017</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>69 Rue de Tolbiac</span> Paris, France</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>0820 820 001</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@bnpparisbas.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>À propos de nous</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+
+        <div class="footer-icons">
+
+          <a href="https://www.facebook.com/mabanque.bnpparibas/"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/mabanque_bnpp"><i class="fa fa-twitter"></i></a>
+          <a href="https://fr.linkedin.com/company/bnp-paribas"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.youtube.com/user/BNPParibas"><i class="fa fa-youtube"></i></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+    <script> 
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script> 
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 8%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</body>
+</html>
